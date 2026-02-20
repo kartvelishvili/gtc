@@ -1,0 +1,197 @@
+{
+  "site": {
+    "name": "GTC Group",
+    "tagline": "Качественное строительство",
+    "copyright": "© {year} GTC Group. Все права защищены."
+  },
+  "nav": {
+    "home": "Главная",
+    "aboutUs": "О нас",
+    "doka": "DOKA",
+    "services": "Услуги",
+    "products": "Продукция",
+    "projects": "Проекты",
+    "news": "Новости",
+    "contact": "Контакт"
+  },
+  "hero": {
+    "cta": {
+      "products": "Продукция",
+      "contact": "Связаться с нами",
+      "catalog": "Каталог",
+      "learnMore": "Подробнее",
+      "services": "Услуги",
+      "projects": "Проекты"
+    }
+  },
+  "stats": {
+    "years": "лет на рынке",
+    "employees": "сотрудников",
+    "projects": "реализованных проектов",
+    "partners": "компаний-партнёров"
+  },
+  "sections": {
+    "ourServices": "Наши услуги",
+    "ourServicesSubtitle": "Профессиональное сопровождение на каждом этапе строительства",
+    "featuredProducts": "Продукция",
+    "featuredProjects": "Проекты",
+    "latestNews": "Новости",
+    "relatedProducts": "Похожие продукты",
+    "relatedProjects": "Похожие проекты",
+    "usedSystems": "Использованные системы",
+    "photoGallery": "Фотогалерея",
+    "specifications": "Технические характеристики",
+    "documents": "Документы",
+    "description": "Описание",
+    "benefits": "Преимущества",
+    "projectDetails": "Детали проекта"
+  },
+  "about": {
+    "title": "О нас",
+    "subtitle": "Партнёр в строительстве с 2010 года",
+    "historyTitle": "История",
+    "missionTitle": "Миссия",
+    "visionTitle": "Видение",
+    "productsTitle": "Продукция",
+    "servicesTitle": "Услуги",
+    "achievementsTitle": "Достижения",
+    "partnersTitle": "Партнёры",
+    "priorityTitle": "Приоритет"
+  },
+  "doka": {
+    "title": "DOKA",
+    "subtitle": "Мировой лидер в опалубочных системах",
+    "partnershipTitle": "О партнёрстве",
+    "productsTitle": "Продукция DOKA",
+    "statsTitle": "DOKA в цифрах",
+    "cta": "Смотреть продукцию DOKA"
+  },
+  "services": {
+    "title": "Услуги",
+    "subtitle": "Опытная команда для вашего строительства",
+    "cta": "Нужна профессиональная консультация?",
+    "ctaSubtitle": "Наша опытная команда готова помочь с проектом любой сложности."
+  },
+  "products": {
+    "title": "Продукция",
+    "allCategories": "Все категории",
+    "orderCta": "Свяжитесь для заказа",
+    "category": "Категория",
+    "brand": "Бренд",
+    "items": "Продукты"
+  },
+  "projects": {
+    "title": "Проекты",
+    "subtitle": "200+ успешных проектов",
+    "client": "Заказчик",
+    "contractor": "Подрядчик",
+    "startDate": "Начало",
+    "endDate": "Завершение",
+    "location": "Местоположение",
+    "type": "Тип",
+    "categories": {
+      "all": "Все",
+      "residential": "Жилые",
+      "commercial": "Коммерческие",
+      "infrastructure": "Инфраструктура",
+      "stadium": "Стадионы",
+      "industrial": "Промышленные",
+      "other": "Другие"
+    }
+  },
+  "news": {
+    "title": "Новости",
+    "allCategories": "Все",
+    "allYears": "Все годы",
+    "categories": {
+      "company": "Компания",
+      "products": "Продукция",
+      "projects": "Проекты",
+      "events": "Мероприятия",
+      "other": "Другое"
+    }
+  },
+  "contact": {
+    "title": "Свяжитесь с нами",
+    "subtitle": "Наша команда готова помочь",
+    "info": {
+      "office": "Офис",
+      "sales": "Продажи",
+      "import": "Импорт",
+      "email": "Email",
+      "address": "Адрес",
+      "workingHours": "Рабочие часы",
+      "workingHoursValue": "Понедельник — Пятница, 10:00 — 18:00"
+    },
+    "form": {
+      "firstName": "Имя",
+      "lastName": "Фамилия",
+      "email": "Email",
+      "phone": "Телефон",
+      "subject": "Тема",
+      "message": "Сообщение",
+      "send": "Отправить",
+      "sending": "Отправка...",
+      "success": "Ваше сообщение успешно отправлено! Наша команда свяжется с вами в течение 24 часов.",
+      "error": "Не удалось отправить сообщение. Пожалуйста, попробуйте ещё раз или свяжитесь с нами по телефону."
+    },
+    "validation": {
+      "required": "Обязательное поле",
+      "invalidEmail": "Неверный формат email",
+      "tooShort": "Слишком короткое",
+      "tooLong": "Слишком длинное"
+    }
+  },
+  "common": {
+    "viewAll": "Смотреть все",
+    "readMore": "Подробнее",
+    "back": "Назад",
+    "loading": "Загрузка...",
+    "noResults": "Результатов не найдено",
+    "filter": "Фильтр",
+    "sort": "Сортировка",
+    "newest": "Сначала новые",
+    "oldest": "Сначала старые",
+    "search": "Поиск",
+    "breadcrumb": {
+      "home": "Главная"
+    },
+    "pagination": {
+      "previous": "Предыдущая",
+      "next": "Следующая",
+      "page": "Страница"
+    }
+  },
+  "footer": {
+    "company": "Компания",
+    "quickLinks": "Быстрые ссылки",
+    "contactInfo": "Контакт",
+    "followUs": "Подпишитесь",
+    "description": "Один из крупнейших импортёров опалубочных материалов в Грузии с 2010 года и эксклюзивный дистрибьютор DOKA."
+  },
+  "meta": {
+    "homeTitle": "GTC Group — Качественное строительство | Эксклюзивный дистрибьютор DOKA",
+    "homeDescription": "Группа GTC — импорт опалубочных систем, строительных материалов и эксклюзивный дистрибьютор DOKA в Грузии. Инженерия, аренда, консультации.",
+    "aboutTitle": "О нас — GTC Group",
+    "aboutDescription": "Группа GTC с 2010 года — один из крупнейших импортёров опалубочных материалов в Грузии. Партнёр DOKA, Sveza, Plyterra.",
+    "dokaTitle": "DOKA — Эксклюзивный дистрибьютор в Грузии | GTC Group",
+    "dokaDescription": "Группа GTC — эксклюзивный дистрибьютор DOKA в Грузии. Мировой лидер в опалубочных системах.",
+    "servicesTitle": "Услуги — GTC Group",
+    "servicesDescription": "Инженерные услуги, консультации, аренда опалубочных систем и оптимизация процессов.",
+    "productsTitle": "Продукция — GTC Group",
+    "productsDescription": "Опалубочные системы, строительная фанера, балки, стойки, леса — DOKA, Sveza, Plyterra.",
+    "projectsTitle": "Проекты — GTC Group",
+    "projectsDescription": "200+ реализованных проектов в Грузии — жилые, коммерческие, инфраструктурные.",
+    "newsTitle": "Новости — GTC Group",
+    "newsDescription": "Последние новости, продукция и проекты группы GTC.",
+    "contactTitle": "Контакт — GTC Group",
+    "contactDescription": "Свяжитесь с нами — GTC Group. Офис: +995 32 2 21 21 61. Адрес: пр. Д. Агмашенебели N122, Тбилиси."
+  },
+  "errors": {
+    "notFound": "Страница не найдена",
+    "notFoundDescription": "Запрашиваемая страница не существует.",
+    "serverError": "Ошибка сервера",
+    "serverErrorDescription": "Произошла ошибка. Пожалуйста, попробуйте снова.",
+    "backHome": "На главную"
+  }
+}
