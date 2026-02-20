@@ -16,9 +16,9 @@ function safeDateFormat(dateStr: string | null | undefined, lang: string): strin
 }
 
 export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
-  const { lang, slug } = await params;
+  const { lang, id } = await params;
   const l = lang as Locale;
-  const project = await getProject(slug);
+  const project = await getProject(id);
   if (!project) return { title: "Not Found" };
   return {
     title: project.name?.[l] || project.name?.ka || "Project",
@@ -27,10 +27,10 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
 }
 
 export default async function ProjectDetailPage({ params }: { params: any }) {
-  const { lang, slug } = await params;
+  const { lang, id } = await params;
   const l = lang as Locale;
   const dict = (await getDictionary(lang)) as any;
-  const project = await getProject(slug);
+  const project = await getProject(id);
 
   if (!project) notFound();
 

@@ -8,9 +8,9 @@ import type { Locale } from "@/interfaces/localized-text.interface";
 import type { Metadata } from "next";
 
 export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
-  const { lang, slug } = await params;
+  const { lang, id } = await params;
   const l = lang as Locale;
-  const product = await getGtcProduct(slug);
+  const product = await getGtcProduct(id);
   if (!product) return { title: "Not Found" };
   return {
     title: product.name?.[l] || product.name?.ka || "Product",
@@ -19,10 +19,10 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
 }
 
 export default async function ProductDetailPage({ params }: { params: any }) {
-  const { lang, slug } = await params;
+  const { lang, id } = await params;
   const l = lang as Locale;
   const dict = (await getDictionary(lang)) as any;
-  const product = await getGtcProduct(slug);
+  const product = await getGtcProduct(id);
 
   if (!product) notFound();
 

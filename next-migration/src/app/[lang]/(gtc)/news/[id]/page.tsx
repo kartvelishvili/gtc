@@ -4,6 +4,7 @@ import Image from "next/image";
 import { getNewsItem } from "@/lib/data/gtc-queries";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import type { Locale } from "@/interfaces/localized-text.interface";
 
 /** Guard against null / epoch dates (Jan 1970 fix) */
 function safeDateFormat(dateStr: string | null, lang: string): string {
@@ -19,26 +20,28 @@ function safeDateFormat(dateStr: string | null, lang: string): string {
 }
 
 export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
-  const { lang, slug } = await params;
-  const news = await getNewsItem(slug);
+  const { lang, id } = await params;
+  const l = lang as Locale;
+  const news = await getNewsItem(id);
   if (!news) return { title: "Not Found" };
   return {
-    title: news.title?.[lang] || news.title?.ka || "News",
-    description: news.excerpt?.[lang] || news.excerpt?.ka || "",
+    title: news.title?.[l] || news.title?.ka || "News",
+    description: news.shortDescription?.[l] || news.shortDescription?.ka || "",
   };
 }
 
 export default async function NewsDetailPage({ params }: { params: any }) {
-  const { lang, slug } = await params;
+  const { lang, id } = await params;
   const dict = (await getDictionary(lang)) as any;
-  const news = await getNewsItem(slug);
+  const news = await getNewsItem(id);
 
   if (!news) notFound();
 
-  const title = news.title?.[lang] || news.title?.ka || "";
-  const content = news.content?.[lang] || news.content?.ka || "";
-  const excerpt = news.excerpt?.[lang] || news.excerpt?.ka || "";
-  const date = safeDateFormat(news.publishedAt, lang);
+  const l = lang as Locale;
+  const title = news.title?.[l] || news.title?.ka || "";
+  const content = news.description?.[l] || news.description?.ka || "";
+  const excerpt = news.shortDescription?.[l] || news.shortDescription?.ka || "";
+  const date = safeDateFormat(news.publishedAt ?? null, lang);
   const categoryLabel = dict.news?.categories?.[news.category] || news.category;
 
   return (
@@ -62,11 +65,11 @@ export default async function NewsDetailPage({ params }: { params: any }) {
       </section>
 
       {/* Cover Image */}
-      {news.coverImage && (
+      {news.image?.url && (
         <section>
           <div className="gtc-container" style={{ maxWidth: "900px" }}>
             <Image
-              src={news.coverImage}
+              src={news.image.url}
               alt={title}
               width={900}
               height={500}

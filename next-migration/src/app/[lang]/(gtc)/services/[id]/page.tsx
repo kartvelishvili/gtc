@@ -6,9 +6,9 @@ import type { Locale } from "@/interfaces/localized-text.interface";
 import type { Metadata } from "next";
 
 export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
-  const { lang, slug } = await params;
+  const { lang, id } = await params;
   const l = lang as Locale;
-  const service = await getService(slug);
+  const service = await getService(id);
   if (!service) return { title: "Service Not Found" };
   return {
     title: service.name?.[l] || service.name?.ka || "Service",
@@ -17,10 +17,10 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
 }
 
 export default async function ServiceDetailPage({ params }: { params: any }) {
-  const { lang, slug } = await params;
+  const { lang, id } = await params;
   const l = lang as Locale;
   const dict = (await getDictionary(lang)) as any;
-  const service = await getService(slug);
+  const service = await getService(id);
 
   if (!service) notFound();
 

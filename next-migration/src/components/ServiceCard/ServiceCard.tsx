@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { FC } from "react";
+import { FC, ReactElement } from "react";
 import { LocaleType } from "@/types/gtc-locale.type";
 import { ServiceSlug } from "@/interfaces/service.interface";
 
 /* Icon mapping for each service */
-const serviceIcons: Record<ServiceSlug, JSX.Element> = {
+const serviceIcons: Record<ServiceSlug, ReactElement> = {
   engineering: (
     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
       <path d="M2 20h20" />
