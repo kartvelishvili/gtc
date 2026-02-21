@@ -6,6 +6,7 @@
   },
   "nav": {
     "home": "Home",
+    "about": "About Us",
     "aboutUs": "About Us",
     "doka": "DOKA",
     "services": "Services",
@@ -70,7 +71,11 @@
     "title": "Services",
     "subtitle": "Experienced Team for Your Construction",
     "cta": "Need Professional Consultation?",
-    "ctaSubtitle": "Our experienced team is ready to assist with projects of any complexity."
+    "ctaSubtitle": "Our experienced team is ready to assist with projects of any complexity.",
+    "engineering": { "name": "Engineering Services" },
+    "consulting": { "name": "Consulting" },
+    "rental": { "name": "Equipment Rental" },
+    "optimization": { "name": "Process Optimization" }
   },
   "products": {
     "title": "Products",
@@ -165,9 +170,14 @@
   "footer": {
     "company": "Company",
     "quickLinks": "Quick Links",
+    "services": "Services",
     "contactInfo": "Contact",
     "followUs": "Follow Us",
-    "description": "One of the largest importers of formwork materials in Georgia since 2010 and exclusive DOKA distributor."
+    "description": "One of the largest importers of formwork materials in Georgia since 2010 and exclusive DOKA distributor.",
+    "address": "D. Aghmashenebeli Ave N122, Tbilisi",
+    "phone": "+995 32 247 07 47",
+    "email": "info@gtcgroup.ge",
+    "rights": "All rights reserved."
   },
   "meta": {
     "homeTitle": "GTC Group — Building with Excellence | Exclusive DOKA Distributor",

@@ -39,9 +39,9 @@ export default async function HomePage({ params }: { params: any }) {
   // Fallback hero if no slides in DB
   const fallbackSlides = slides.length > 0 ? slides : [{
     id: "fallback",
-    title: dict.hero?.title || "GTC Group",
-    subtitle: dict.hero?.subtitle || "",
-    ctaText: dict.hero?.cta || "",
+    title: dict.site?.name || "GTC Group",
+    subtitle: dict.site?.tagline || "",
+    ctaText: dict.hero?.cta?.contact || dict.nav?.contact || "Contact Us",
     ctaUrl: `/${lang}/contact-us`,
     imageUrl: "/images/hero-default.jpg",
   }];
@@ -70,10 +70,10 @@ export default async function HomePage({ params }: { params: any }) {
         <div className="gtc-container">
           <div className="gtc-section__header">
             <h2 className="gtc-section__title">
-              {dict.sections?.services || "Our Services"}
+              {dict.sections?.ourServices || "Our Services"}
             </h2>
             <p className="gtc-section__subtitle">
-              {dict.sections?.servicesSubtitle || ""}
+              {dict.sections?.ourServicesSubtitle || ""}
             </p>
           </div>
           <div className="gtc-grid gtc-grid--4">
@@ -123,7 +123,7 @@ export default async function HomePage({ params }: { params: any }) {
         <div className="gtc-container">
           <div className="gtc-section__header">
             <h2 className="gtc-section__title">
-              {dict.sections?.projects || "Featured Projects"}
+              {dict.sections?.featuredProjects || "Featured Projects"}
             </h2>
             <Link href={`/${lang}/projects`} className="gtc-btn gtc-btn--ghost">
               {dict.common?.viewAll || "View All"}
@@ -155,7 +155,7 @@ export default async function HomePage({ params }: { params: any }) {
         <div className="gtc-container">
           <div className="gtc-section__header">
             <h2 className="gtc-section__title">
-              {dict.sections?.news || "Latest News"}
+              {dict.sections?.latestNews || "Latest News"}
             </h2>
             <Link href={`/${lang}/news`} className="gtc-btn gtc-btn--ghost">
               {dict.common?.viewAll || "View All"}
