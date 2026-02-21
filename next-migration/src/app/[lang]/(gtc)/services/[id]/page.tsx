@@ -61,7 +61,7 @@ export default async function ServiceDetailPage({ params }: { params: any }) {
                 {dict.services?.benefitsTitle || "Key Benefits"}
               </h3>
               <ul className="gtc-service-card__benefits" style={{ listStyle: "none", padding: 0 }}>
-                {benefits.map((benefit: string, i: number) => (
+                {benefits.filter(Boolean).map((benefit, i) => (
                   <li key={i} style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" strokeWidth="2">
                       <polyline points="20 6 9 17 4 12" />

@@ -108,7 +108,7 @@ export default async function HomePage({ params }: { params: any }) {
           </div>
           <div style={{ flex: "0 0 200px", textAlign: "center" }}>
             <Image
-              src="/images/doka-logo.png"
+              src="/images/doka-logo.svg"
               alt="DOKA"
               width={180}
               height={80}

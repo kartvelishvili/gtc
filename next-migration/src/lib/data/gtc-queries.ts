@@ -1,12 +1,35 @@
 import { createSupabaseServerClient } from "@/lib/supabase/server";
-import { IProductCategory } from "@/interfaces/product-category.interface";
+import { IProductCategory, IBrand, ILocalizedText, IFile } from "@/interfaces/localized-text.interface";
 import { IGtcProduct } from "@/interfaces/gtc-product.interface";
-import { IBrand } from "@/interfaces/brand.interface";
 import { IService } from "@/interfaces/service.interface";
 import { IProject } from "@/interfaces/project.interface";
 import { INews } from "@/interfaces/news.interface";
-import { IHeroSlide } from "@/interfaces/hero-slide.interface";
-import { IContactSubmission } from "@/interfaces/contact.interface";
+
+// ─── Inline types for hero slides & contact ─────────────────
+
+export interface IHeroSlide {
+  id: number;
+  title: ILocalizedText;
+  subtitle?: ILocalizedText;
+  ctaText?: ILocalizedText;
+  ctaUrl?: string;
+  imageUrl?: string;
+  videoUrl?: string;
+  sortOrder: number;
+  isActive: boolean;
+}
+
+export interface IContactSubmission {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone?: string;
+  subject?: string;
+  message: string;
+  isRead: boolean;
+  createdAt: string;
+}
 
 // ─── Helper: snake_case → camelCase mapper ──────────────────
 

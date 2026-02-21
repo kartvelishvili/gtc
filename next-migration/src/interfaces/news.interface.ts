@@ -1,5 +1,4 @@
-import { IFile } from "@/interfaces/file.interface";
-import { ILocalizedText } from "@/interfaces/localized-text.interface";
+import { IFile, ILocalizedText } from "@/interfaces/localized-text.interface";
 
 export type NewsCategory =
   | "company"

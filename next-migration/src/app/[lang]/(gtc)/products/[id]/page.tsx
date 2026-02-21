@@ -104,7 +104,7 @@ export default async function ProductDetailPage({ params }: { params: any }) {
           <div style={{ flex: "1 1 400px" }}>
             {product.brand?.name && (
               <span className="gtc-tag" style={{ marginBottom: "12px", display: "inline-block" }}>
-                {product.brand.name}
+                {product.brand.name[l] || product.brand.name.ka || ""}
               </span>
             )}
             <h2 style={{ marginBottom: "16px" }}>{name}</h2>

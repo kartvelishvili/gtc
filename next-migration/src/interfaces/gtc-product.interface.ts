@@ -1,7 +1,4 @@
-import { IFile } from "@/interfaces/file.interface";
-import { ILocalizedText } from "@/interfaces/localized-text.interface";
-import { IBrand } from "@/interfaces/brand.interface";
-import { IProductCategory } from "@/interfaces/product-category.interface";
+import { IFile, ILocalizedText, IBrand, IProductCategory } from "@/interfaces/localized-text.interface";
 
 export interface IProductSpecification {
   key: string;
